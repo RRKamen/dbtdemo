@@ -1,0 +1,7 @@
+SELECT
+id_vehicule,
+modele_vehicule,
+id_type_vehicule,
+immatriculation
+FROM `vtcparis.vehicules`
+WHERE immatriculation IS NOT NULL
