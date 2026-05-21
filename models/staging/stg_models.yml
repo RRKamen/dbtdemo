@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: stg_natality                        # doit correspondre exactement au nom du fichier .sql
+    description: "Données de naissances nettoyées, filtrées sur 2000-2008"
+    columns:
+      - name: year
+        description: "Année de naissance"
+        tests:
+          - not_null
+
+      - name: weight_pounds
+        description: "Poids de naissance en livres"
+        tests:
+          - not_null
+
+      - name: is_male
+        description: "Sexe de l'enfant"
+        tests:
+          - not_null
+         
+      - name: state
+        description: "État américain"
+
+      - name: plurality
+        description: "Nombre d'enfants nés (1 = simple, 2 = jumeaux...)"
+        
+
+      - name: cigarette_use
+        description: "La mère fumait-elle pendant la grossesse"

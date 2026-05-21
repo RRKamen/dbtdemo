@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: samples
+    database: bigquery-public-data #nom du projet
+    schema: samples #nom du dataset
+    tables:
+      - name: natality #nom de la table
